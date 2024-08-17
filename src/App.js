@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import Typical from "react-typical";
 import pytorchImg from "./assests/images.png"
