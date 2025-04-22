@@ -21,7 +21,7 @@ function App() {
       {/* Navbar */}
       <header className="sticky top-0 bg-black backdrop-blur-md shadow-md z-50">
         <nav className="container mx-auto px-6 py-4 flex flex-wrap items-center justify-between">
-          <div className="text-xl font-bold text-white">AbhiramPB</div>
+          <div className="text-xl font-bold text-white">Abhiram PB</div>
           <ul className="flex space-x-6 text-white">
             {['Home', 'About', 'Skills', 'Projects', 'Achievements', 'Contact'].map(item => (
               <li key={item} className="hover:text-orange-500 transition-colors">
@@ -95,10 +95,10 @@ function App() {
       {/* Skills Section */}
       <div className="space-y-6">
         {[
-          { label: 'Web Development', value: 90, color: 'bg-orange-500' },
-          { label: 'AI/ML', value: 90, color: 'bg-yellow-400' },
+          { label: 'Full Stack Development', value: 90, color: 'bg-orange-500' },
+          { label: 'Student', value: 90, color: 'bg-yellow-400' },
           { label: 'Web Design', value: 75, color: 'bg-green-400' },
-          { label: 'IoT', value: 65, color: 'bg-blue-400' },
+          { label: 'Backend Development', value: 65, color: 'bg-blue-400' },
           { label: 'Data Analysis', value: 80, color: 'bg-purple-400' }
         ].map(skill => (
           <div key={skill.label}>
@@ -123,30 +123,30 @@ function App() {
 
       {/* Tech Stack Section */}
       <section id="skills" className="py-20 bg-[#0f172a]">
-  <div className="container mx-auto px-6 text-center">
-    <h2 className="text-4xl font-bold text-white mb-12">Tech Stack</h2>
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-      {[
-        { img: pytorchImg, title: 'PyTorch', desc: 'Deep learning library for dynamic computation.' },
-        { img: scikitImg, title: 'Scikit-learn', desc: 'Machine learning library for classification and regression.' },
-        { img: pandasImg, title: 'Pandas', desc: 'Data manipulation and analysis toolkit.' },
-        { img: MernImg, title: 'MERN Stack', desc: 'MongoDB, Express, React, Node.js full-stack development.' }
-      ].map(tool => (
-        <div
-          key={tool.title}
-          className="bg-gradient-to-br from-[#1e3a8a] to-[#1e40af] p-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
-        >
-          <img src={tool.img} alt={tool.title} className="h-20 mx-auto mb-4" />
-          <h3 className="text-xl font-semibold mb-2 text-white">{tool.title}</h3>
-          <p className="text-sm text-blue-100">{tool.desc}</p>
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-white mb-12">Tech Stack</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            {[
+              { img: pytorchImg, title: 'PyTorch', desc: 'Deep learning library for dynamic computation.', href: 'https://pytorch.org/' },
+              { img: scikitImg, title: 'Scikit-learn', desc: 'Machine learning library for classification and regression.', href: 'https://scikit-learn.org/' },
+              { img: pandasImg, title: 'Pandas', desc: 'Data manipulation and analysis toolkit.', href: 'https://pandas.pydata.org/' },
+              { img: MernImg, title: 'MERN Stack', desc: 'MongoDB, Express, React, Node.js full-stack development.', href: 'https://www.mongodb.com/mern-stack' }
+            ].map(tool => (
+              <a
+                key={tool.title}
+                href={tool.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-br from-[#1e3a8a] to-[#1e40af] p-6 rounded-2xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+              >
+                <img src={tool.img} alt={tool.title} className="h-20 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold mb-2 text-white">{tool.title}</h3>
+                <p className="text-sm text-blue-100">{tool.desc}</p>
+              </a>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
-
-      {/* Projects Section */}
+      </section>
       <section id="projects" className="py-20 bg-gradient-to-br from-[#0f172a] to-[#1e293b]">
   {/* Full‑width wrapper (no mx-auto max‑width) */}
   <div className="w-full px-6 lg:px-10">
