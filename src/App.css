@@ -112,10 +112,12 @@
 }
 
 body {
-	background: linear-gradient(-45deg, #F6FB7A, #B4E380, #88D66C, #73BBA3);
+	background: #123458;
+  
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 	height: 100vh;
+	-webkit-animation: gradient 10s ease infinite;
 }
 
 @keyframes gradient {
@@ -156,3 +158,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
 }
+
