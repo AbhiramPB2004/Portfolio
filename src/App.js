@@ -6,7 +6,7 @@ import scikitImg from './assests/image.png';
 import pandasImg from './assests/pandas-logo-300.png';
 import HeadImg from './assests/background.jpg';
 import LinearProgress from '@mui/material/LinearProgress';
-import HeartImg from './assests/Heart.png';
+
 import MernImg from './assests/MERN-Stack-by-FLM.jpg';
 import CareerImg from './assests/CareerGenie.png';
 import TurreteImg from './assests/Turrete.png';
@@ -14,6 +14,7 @@ import ArduinoImg from './assests/Achievments/Arduino.png';
 import TechImg from './assests/Achievments/image.png';
 import IITMImg from './assests/Achievments/IITMmed.png';
 import IITMBuild from './assests/Achievments/IITM_build.png';
+import nutriscan from './assests/final logo.jpg';
 
 function App() {
   return (
@@ -158,7 +159,7 @@ function App() {
     {/* Grid with left‑aligned items */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-start">
       {[
-        { img: HeartImg, title: 'Heart Health Score', desc: 'Random forest classification.' },
+        { img: nutriscan, title: 'NutriScan', desc: "NutiScan is a smart nutrition scanner that helps users make healthier food choices by analyzing packaged food labels. Using image recognition and AI, it scans nutrition facts and ingredients to provide insights like calorie count, sugar levels, allergens, and suitability for specific diets (e.g., keto, diabetic-friendly). Whether you're shopping at the store or managing your diet, NutiScan makes understanding nutrition quick, easy, and personalized"},
         { img: TurreteImg, title: 'Face Tracking Turret', desc: 'OpenCV + Arduino.' },
         { img: CareerImg, title: 'Career Genie', desc: 'AI-powered career counseling.' }
       ].map(project => (
@@ -172,7 +173,7 @@ function App() {
           <img
             src={project.img}
             alt={project.title}
-            className="w-full h-64 object-cover transition-transform
+            className="w-full h-96 object-fill transition-transform
                        duration-500 group-hover:scale-110"
           />
 
